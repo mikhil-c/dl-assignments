@@ -4,6 +4,9 @@ Evaluate trained models on test sets
 """
 
 import argparse
+import numpy as np
+from ann.neural_network import NeuralNetwork
+from utils import data_loader
 
 def parse_arguments():
     """
@@ -19,6 +22,60 @@ def parse_arguments():
     """
     parser = argparse.ArgumentParser(description='Run inference on test set')
     
+    parser.add_argument(
+        "-d", "--dataset",
+        type=str,
+        required=True,
+        choices=["mnist", "fashion_mnist"],
+        help="Choose between mnist and fashion_mnist"
+    )
+    parser.add_argument("-e", "--epochs", type=int, required=True, help="Number of training epochs")
+    parser.add_argument("-b", "--batch_size", type=int, required=True, help="Mini-batch size")
+    parser.add_argument(
+        "-l", "--loss",
+        type=str,
+        required=True,
+        choices=["mean_squared_error", "cross_entropy"],
+        help="Choice of mean_squared_error or cross_entropy"
+    )
+    parser.add_argument(
+        "-o", "--optimizer",
+        type=str,
+        required=True,
+        choices=["sgd", "momentum", "nag", "rmsprop"],
+        help="One of sgd, momentum, nag, rmsprop"
+    )
+    parser.add_argument("-lr", "--learning_rate", type=float, required=True, help="Initial learning rate")
+    parser.add_argument("-wd", "--weight_decay", type=float, default=0.0, help="Weight dacay for L2 regularization")
+    parser.add_argument("-nhl", "--num_layers", type=int, required=True, help="Number of hidden layers")
+    parser.add_argument("-sz", "--hidden_size", type=int, required=True, nargs="+", help="Number of neurons in each hidden layer")
+    parser.add_argument(
+        "-a", "--activation",
+        type=str,
+        required=True,
+        choices=["sigmoid", "tanh", "relu"],
+        help="Choice of sigmoid, tanh, relu for every hidden layer"
+    )
+    parser.add_argument(
+        "-w_i", "--weight_init",
+        type=str,
+        required=True,
+        choices=["random", "xavier"],
+        help="Choice of random or xavier"
+    )
+    parser.add_argument(
+        "-w_p", "--wandb_project",
+        type=str,
+        default="MLP-for-Image-Classification",
+        help="Weights and Biases Project ID"
+    )
+    parser.add_argument(
+        "--model_path",
+        type=str,
+        default="src/best_model.npy",
+        help="Relative path to the saved best model weights"
+    )
+    
     return parser.parse_args()
 
 
@@ -26,7 +83,9 @@ def load_model(model_path):
     """
     Load trained model from disk.
     """
-    pass
+
+    data = np.load(model_path, allow_pickle=True).item()
+    return data
 
 
 def evaluate_model(model, X_test, y_test): 
@@ -35,7 +94,8 @@ def evaluate_model(model, X_test, y_test):
         
     TODO: Return Dictionary - logits, loss, accuracy, f1, precision, recall
     """
-    pass
+
+    return model.evaluate(X_test, y_test)
 
 
 def main():
@@ -44,9 +104,25 @@ def main():
 
     TODO: Must return Dictionary - logits, loss, accuracy, f1, precision, recall
     """
+
     args = parse_arguments()
-    
-    print("Evaluation complete!")
+
+    (_, _), (X_test, y_test) = data_loader.get_data(args.dataset)
+    model = NeuralNetwork(args)
+    weights = load_model(args.model_path)
+    model.set_weights(weights)
+    results = evaluate_model(model, X_test, y_test)
+
+    print("-" * 40)
+    print("Evaluation Complete")
+    print(f"Loss:      {results['loss']:.4f}")
+    print(f"Accuracy:  {results['accuracy']*100:.2f}%")
+    print(f"Precision: {results['precision']:.4f}")
+    print(f"Recall:    {results['recall']:.4f}")
+    print(f"F1 Score:  {results['f1']:.4f}")
+    print("-" * 40)
+
+    return results
 
 
 if __name__ == '__main__':
