@@ -75,7 +75,9 @@ class NeuralNetwork:
         """
 
         if self.__loss == "cross_entropy":
-            local_grad = y_pred - y_true
+            e = np.exp(y_pred - np.max(y_pred, axis=1, keepdims=True))
+            probs = e / e.sum(axis=1, keepdims=True)
+            local_grad = probs - y_true
         else:
             local_grad = objective_functions.backward(y_pred, y_true, self.__loss) 
 
@@ -92,14 +94,14 @@ class NeuralNetwork:
 
         return (grad_W, grad_b)
     
-    def update_weights(self):
+    def update_weights(self, batch_size):
         """
         Update weights using the optimizer.
         """
 
         for i, layer in enumerate(self.__layers):
-            layer.W = self.__optimizer.update(layer.W, layer.grad_W, f"W{i}")
-            layer.b = self.__optimizer.update(layer.b, layer.grad_b, f"b{i}")
+            layer.W = self.__optimizer.update(layer.W, layer.grad_W / batch_size, f"W{i}")
+            layer.b = self.__optimizer.update(layer.b, layer.grad_b / batch_size, f"b{i}")
 
     def train(self, X_train, y_train, epochs=1, batch_size=32):
         """
@@ -117,12 +119,14 @@ class NeuralNetwork:
                 y_batch = y[i : i + batch_size]
 
                 logits = self.forward(X_batch)
+                '''
                 if self.__loss == "cross_entropy":
                     y_pred = activations.forward("softmax", logits)
                 else:
                     y_pred = logits
-                self.backward(y_batch, y_pred)
-                self.update_weights()
+                '''
+                self.backward(y_batch, logits)
+                self.update_weights(X_batch.shape[0])
 
     def evaluate(self, X, y):
         """

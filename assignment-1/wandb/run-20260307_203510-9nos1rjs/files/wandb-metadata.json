@@ -1,0 +1,28 @@
+{
+  "os":  "Linux-6.18.13-200.fc43.x86_64-x86_64-with-glibc2.42",
+  "python":  "CPython 3.14.3",
+  "startedAt":  "2026-03-07T15:05:10.749896Z",
+  "program":  "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/fast_experiments.py",
+  "codePath":  "assignment-1/notebooks/fast_experiments.py",
+  "codePathLocal":  "notebooks/fast_experiments.py",
+  "git":  {
+    "remote":  "https://github.com/mikhil-c/dl-assignments.git",
+    "commit":  "46eeeb70ffbdd86922a6f75af0376d856f34fc83"
+  },
+  "email":  "cs23b083@smail.iitm.ac.in",
+  "root":  "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1",
+  "host":  "fedora",
+  "executable":  "/usr/bin/python",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "106301489152",
+      "used":  "62028296192"
+    }
+  },
+  "memory":  {
+    "total":  "12175470592"
+  },
+  "writerId":  "b3flk6u2vzp76zxhpp4jmhb6wd9f9teq"
+}

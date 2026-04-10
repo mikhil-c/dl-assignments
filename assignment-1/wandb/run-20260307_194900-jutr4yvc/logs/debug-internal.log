@@ -1,0 +1,12 @@
+{"time":"2026-03-07T19:49:00.826020491+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T19:49:01.423795007+05:30","level":"INFO","msg":"stream: created new stream","id":"jutr4yvc"}
+{"time":"2026-03-07T19:49:01.424009573+05:30","level":"INFO","msg":"handler: started","stream_id":"jutr4yvc"}
+{"time":"2026-03-07T19:49:01.424197854+05:30","level":"INFO","msg":"stream: started","id":"jutr4yvc"}
+{"time":"2026-03-07T19:49:01.424245403+05:30","level":"INFO","msg":"writer: started","stream_id":"jutr4yvc"}
+{"time":"2026-03-07T19:49:01.424268825+05:30","level":"INFO","msg":"sender: started","stream_id":"jutr4yvc"}
+{"time":"2026-03-07T19:49:45.153630781+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T19:49:45.558189776+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T19:49:45.56846061+05:30","level":"INFO","msg":"stream: closing","id":"jutr4yvc"}
+{"time":"2026-03-07T19:49:45.568501773+05:30","level":"INFO","msg":"handler: closed","stream_id":"jutr4yvc"}
+{"time":"2026-03-07T19:49:45.568666631+05:30","level":"INFO","msg":"sender: closed","stream_id":"jutr4yvc"}
+{"time":"2026-03-07T19:49:45.568702761+05:30","level":"INFO","msg":"stream: closed","id":"jutr4yvc"}

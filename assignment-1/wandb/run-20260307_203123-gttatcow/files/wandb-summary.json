@@ -1,0 +1,1 @@
+{"epoch":5,"_step":4,"train_accuracy":0.989,"val_f1":0.9535851363900825,"_timestamp":1.7728957580306532e+09,"_runtime":73,"dead_neurons_layer0":0.5243828125,"dead_neurons_layer1":0.4755,"_wandb":{"runtime":73},"grad_norm_layer0":7.446992248661038,"val_accuracy":0.9538333333333333,"train_loss":0.033840000242048016,"val_loss":0.16613885388022695,"dead_neurons_layer2":0.434625}

@@ -1,0 +1,65 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            78iny7jlop49xm9cseylqzp1ifz2a14q:
+                codePath: assignment-1/notebooks/sweep.py
+                codePathLocal: notebooks/sweep.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "106301489152"
+                        used: "61957251072"
+                email: cs23b083@smail.iitm.ac.in
+                executable: /usr/bin/python
+                git:
+                    commit: 46eeeb70ffbdd86922a6f75af0376d856f34fc83
+                    remote: https://github.com/mikhil-c/dl-assignments.git
+                host: fedora
+                memory:
+                    total: "12175470592"
+                os: Linux-6.18.13-200.fc43.x86_64-x86_64-with-glibc2.42
+                program: /home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/sweep.py
+                python: CPython 3.14.3
+                root: /home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1
+                startedAt: "2026-03-07T14:15:44.506054Z"
+                writerId: 78iny7jlop49xm9cseylqzp1ifz2a14q
+        m: []
+        python_version: 3.14.3
+        t:
+            "1":
+                - 1
+                - 2
+                - 5
+                - 53
+            "2":
+                - 1
+                - 2
+                - 5
+                - 53
+            "3":
+                - 2
+                - 14
+            "4": 3.14.3
+            "5": 0.25.0
+            "12": 0.25.0
+            "13": linux-x86_64
+activation:
+    value: tanh
+batch_size:
+    value: 32
+epochs:
+    value: 20
+hidden_size:
+    value: 32
+learning_rate:
+    value: 0.01
+num_layers:
+    value: 1
+optimizer:
+    value: rmsprop
+weight_decay:
+    value: 0
+weight_init:
+    value: xavier

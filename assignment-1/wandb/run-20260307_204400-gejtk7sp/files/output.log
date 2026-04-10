@@ -1,0 +1,5 @@
+  2.10-fashion-momentum-relu epoch 1/5 val_acc=0.675
+  2.10-fashion-momentum-relu epoch 2/5 val_acc=0.772
+  2.10-fashion-momentum-relu epoch 3/5 val_acc=0.782
+  2.10-fashion-momentum-relu epoch 4/5 val_acc=0.792
+  2.10-fashion-momentum-relu epoch 5/5 val_acc=0.817

@@ -1,0 +1,1 @@
+{"dead_neurons_layer1":0.99304296875,"val_f1":0.13831136960394755,"train_accuracy":0.216,"val_loss":2.0361484943093346,"_timestamp":1.772895984243776e+09,"epoch":5,"_wandb":{"runtime":72},"_runtime":72,"dead_neurons_layer2":0.99914453125,"_step":4,"train_loss":2.011689432692293,"dead_neurons_layer0":0.999140625,"val_accuracy":0.205,"grad_norm_layer0":0}

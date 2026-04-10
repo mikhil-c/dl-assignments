@@ -1,0 +1,5 @@
+  2.6-mean_squared_error epoch 1/5 val_acc=0.920
+  2.6-mean_squared_error epoch 2/5 val_acc=0.943
+  2.6-mean_squared_error epoch 3/5 val_acc=0.949
+  2.6-mean_squared_error epoch 4/5 val_acc=0.954
+  2.6-mean_squared_error epoch 5/5 val_acc=0.960

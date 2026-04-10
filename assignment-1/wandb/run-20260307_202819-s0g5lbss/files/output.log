@@ -1,0 +1,5 @@
+  2.3-optimizer-sgd epoch 1/5 val_acc=0.302
+  2.3-optimizer-sgd epoch 2/5 val_acc=0.529
+  2.3-optimizer-sgd epoch 3/5 val_acc=0.639
+  2.3-optimizer-sgd epoch 4/5 val_acc=0.716
+  2.3-optimizer-sgd epoch 5/5 val_acc=0.762

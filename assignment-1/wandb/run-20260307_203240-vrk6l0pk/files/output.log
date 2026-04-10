@@ -1,0 +1,5 @@
+  2.4-sigmoid epoch 1/5 val_acc=0.864
+  2.4-sigmoid epoch 2/5 val_acc=0.901
+  2.4-sigmoid epoch 3/5 val_acc=0.914
+  2.4-sigmoid epoch 4/5 val_acc=0.923
+  2.4-sigmoid epoch 5/5 val_acc=0.927

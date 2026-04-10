@@ -1,0 +1,12 @@
+{"time":"2026-03-07T20:43:42.258399003+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T20:43:42.977712808+05:30","level":"INFO","msg":"stream: created new stream","id":"dcahrclp"}
+{"time":"2026-03-07T20:43:42.977917096+05:30","level":"INFO","msg":"stream: started","id":"dcahrclp"}
+{"time":"2026-03-07T20:43:42.978250292+05:30","level":"INFO","msg":"writer: started","stream_id":"dcahrclp"}
+{"time":"2026-03-07T20:43:42.978299298+05:30","level":"INFO","msg":"handler: started","stream_id":"dcahrclp"}
+{"time":"2026-03-07T20:43:42.978325934+05:30","level":"INFO","msg":"sender: started","stream_id":"dcahrclp"}
+{"time":"2026-03-07T20:46:21.489942102+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T20:46:21.920951439+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T20:46:21.930893523+05:30","level":"INFO","msg":"stream: closing","id":"dcahrclp"}
+{"time":"2026-03-07T20:46:21.930917425+05:30","level":"INFO","msg":"handler: closed","stream_id":"dcahrclp"}
+{"time":"2026-03-07T20:46:21.931033136+05:30","level":"INFO","msg":"sender: closed","stream_id":"dcahrclp"}
+{"time":"2026-03-07T20:46:21.93105491+05:30","level":"INFO","msg":"stream: closed","id":"dcahrclp"}

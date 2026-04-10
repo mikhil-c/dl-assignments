@@ -1,0 +1,5 @@
+  2.10-fashion-rmsprop-relu epoch 1/5 val_acc=0.785
+  2.10-fashion-rmsprop-relu epoch 2/5 val_acc=0.817
+  2.10-fashion-rmsprop-relu epoch 3/5 val_acc=0.826
+  2.10-fashion-rmsprop-relu epoch 4/5 val_acc=0.796
+  2.10-fashion-rmsprop-relu epoch 5/5 val_acc=0.815

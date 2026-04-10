@@ -11,7 +11,9 @@ class Layer:
         if weight_init == "random":
             self.W = np.random.randn(d_prev, d_curr)
         elif weight_init == "xavier":
-            self.W = np.random.randn(d_prev, d_curr) * np.sqrt(1 / d_prev)
+            self.W = np.random.randn(d_prev, d_curr) * np.sqrt(2 / d_prev)
+        elif weight_init == "zeros":
+            self.W = np.zeros((d_prev, d_curr))
 
         self.b = np.zeros((1, d_curr))
         self.x = None # input from the previous layer
@@ -32,6 +34,6 @@ class Layer:
         else:
             self.local_grad = (incoming_local_grad @ W_next.T) * activations.backward(activation_function, self.a)
         batch_size = self.x.shape[0]
-        self.grad_W = (self.x.T @ self.local_grad) / batch_size + (weight_decay * self.W)
-        self.grad_b = np.sum(self.local_grad, axis=0, keepdims=True) / batch_size
+        self.grad_W = (self.x.T @ self.local_grad + weight_decay * self.W) #/ batch_size
+        self.grad_b = np.sum(self.local_grad, axis=0) #/ batch_size
         return self.local_grad

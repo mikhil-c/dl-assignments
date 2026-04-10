@@ -1,0 +1,50 @@
+Traceback (most recent call last):
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/experiments.py", line 74, in <module>
+    run_experiment(
+    ~~~~~~~~~~~~~~^
+        name=f"2.3-optimizer-{opt}",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        }
+        ^
+    )
+    ^
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/experiments.py", line 40, in run_experiment
+    model.train(X_train, y_train, epochs=1, batch_size=Args.batch_size)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/neural_network.py", line 121, in train
+    logits = self.forward(X_batch)
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/neural_network.py", line 59, in forward
+    layer_output = self.__layers[i].forward(layer_output, self.__activation)
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/neural_layer.py", line 26, in forward
+    self.a = activations.forward(activation_function, z)
+             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/activations.py", line 8, in forward
+    def forward(activation_function, z): # forward computes the activation values
+
+KeyboardInterrupt
+Traceback (most recent call last):
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/experiments.py"[0m, line [35m74[0m, in [35m<module>[0m
+    [31mrun_experiment[0m[1;31m([0m
+    [31m~~~~~~~~~~~~~~[0m[1;31m^[0m
+        [1;31mname=f"2.3-optimizer-{opt}",[0m
+        [1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+    ...<7 lines>...
+        [1;31m}[0m
+        [1;31m^[0m
+    [1;31m)[0m
+    [1;31m^[0m
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/experiments.py"[0m, line [35m40[0m, in [35mrun_experiment[0m
+    [31mmodel.train[0m[1;31m(X_train, y_train, epochs=1, batch_size=Args.batch_size)[0m
+    [31m~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/neural_network.py"[0m, line [35m121[0m, in [35mtrain[0m
+    logits = self.forward(X_batch)
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/neural_network.py"[0m, line [35m59[0m, in [35mforward[0m
+    layer_output = self.__layers[i].forward(layer_output, self.__activation)
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/neural_layer.py"[0m, line [35m26[0m, in [35mforward[0m
+    self.a = [31mactivations.forward[0m[1;31m(activation_function, z)[0m
+             [31m~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/activations.py"[0m, line [35m8[0m, in [35mforward[0m
+    def forward(activation_function, z): # forward computes the activation values
+
+[1;35mKeyboardInterrupt[0m

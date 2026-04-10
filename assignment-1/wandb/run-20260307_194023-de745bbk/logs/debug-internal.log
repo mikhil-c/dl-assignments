@@ -1,0 +1,12 @@
+{"time":"2026-03-07T19:40:23.557692185+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T19:40:23.981363299+05:30","level":"INFO","msg":"stream: created new stream","id":"de745bbk"}
+{"time":"2026-03-07T19:40:23.981592215+05:30","level":"INFO","msg":"handler: started","stream_id":"de745bbk"}
+{"time":"2026-03-07T19:40:23.981946883+05:30","level":"INFO","msg":"stream: started","id":"de745bbk"}
+{"time":"2026-03-07T19:40:23.982079448+05:30","level":"INFO","msg":"writer: started","stream_id":"de745bbk"}
+{"time":"2026-03-07T19:40:23.982077083+05:30","level":"INFO","msg":"sender: started","stream_id":"de745bbk"}
+{"time":"2026-03-07T19:40:59.00990537+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T19:40:59.424105286+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T19:40:59.43318776+05:30","level":"INFO","msg":"stream: closing","id":"de745bbk"}
+{"time":"2026-03-07T19:40:59.43323717+05:30","level":"INFO","msg":"handler: closed","stream_id":"de745bbk"}
+{"time":"2026-03-07T19:40:59.433340472+05:30","level":"INFO","msg":"sender: closed","stream_id":"de745bbk"}
+{"time":"2026-03-07T19:40:59.433361946+05:30","level":"INFO","msg":"stream: closed","id":"de745bbk"}

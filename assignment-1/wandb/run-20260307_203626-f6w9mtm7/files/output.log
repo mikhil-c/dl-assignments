@@ -1,0 +1,5 @@
+  2.5-tanh-highlr epoch 1/5 val_acc=0.105
+  2.5-tanh-highlr epoch 2/5 val_acc=0.104
+  2.5-tanh-highlr epoch 3/5 val_acc=0.098
+  2.5-tanh-highlr epoch 4/5 val_acc=0.098
+  2.5-tanh-highlr epoch 5/5 val_acc=0.105

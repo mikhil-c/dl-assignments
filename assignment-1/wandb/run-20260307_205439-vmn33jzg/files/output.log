@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/weight_init.py", line 56, in <module>
+    run_init_experiment("zeros")
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/weight_init.py", line 39, in run_init_experiment
+    logits = model.forward(X_batch)
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/neural_network.py", line 59, in forward
+    layer_output = self.__layers[i].forward(layer_output, self.__activation)
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/neural_layer.py", line 25, in forward
+    z = self.x @ self.W + self.b
+                 ^^^^^^
+AttributeError: 'Layer' object has no attribute 'W'
+Traceback (most recent call last):
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/weight_init.py"[0m, line [35m56[0m, in [35m<module>[0m
+    [31mrun_init_experiment[0m[1;31m("zeros")[0m
+    [31m~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^[0m
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/weight_init.py"[0m, line [35m39[0m, in [35mrun_init_experiment[0m
+    logits = model.forward(X_batch)
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/neural_network.py"[0m, line [35m59[0m, in [35mforward[0m
+    layer_output = self.__layers[i].forward(layer_output, self.__activation)
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/src/ann/neural_layer.py"[0m, line [35m25[0m, in [35mforward[0m
+    z = self.x @ [1;31mself.W[0m + self.b
+                 [1;31m^^^^^^[0m
+[1;35mAttributeError[0m: [35m'Layer' object has no attribute 'W'[0m

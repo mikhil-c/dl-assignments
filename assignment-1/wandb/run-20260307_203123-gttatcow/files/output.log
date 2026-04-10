@@ -1,0 +1,5 @@
+  2.3-optimizer-rmsprop epoch 1/5 val_acc=0.913
+  2.3-optimizer-rmsprop epoch 2/5 val_acc=0.945
+  2.3-optimizer-rmsprop epoch 3/5 val_acc=0.944
+  2.3-optimizer-rmsprop epoch 4/5 val_acc=0.955
+  2.3-optimizer-rmsprop epoch 5/5 val_acc=0.954

@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/weight_init.py", line 69, in <module>
+    run_init_experiment("zeros")
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/weight_init.py", line 38, in run_init_experiment
+    layer.W = np.zeros_like(layer.W)
+                            ^^^^^^^
+AttributeError: 'Layer' object has no attribute 'W'
+Traceback (most recent call last):
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/weight_init.py"[0m, line [35m69[0m, in [35m<module>[0m
+    [31mrun_init_experiment[0m[1;31m("zeros")[0m
+    [31m~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^[0m
+  File [35m"/home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/weight_init.py"[0m, line [35m38[0m, in [35mrun_init_experiment[0m
+    layer.W = np.zeros_like([1;31mlayer.W[0m)
+                            [1;31m^^^^^^^[0m
+[1;35mAttributeError[0m: [35m'Layer' object has no attribute 'W'[0m

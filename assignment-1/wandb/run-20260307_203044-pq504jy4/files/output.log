@@ -1,0 +1,5 @@
+  2.3-optimizer-nag epoch 1/5 val_acc=0.847
+  2.3-optimizer-nag epoch 2/5 val_acc=0.889
+  2.3-optimizer-nag epoch 3/5 val_acc=0.905
+  2.3-optimizer-nag epoch 4/5 val_acc=0.911
+  2.3-optimizer-nag epoch 5/5 val_acc=0.919

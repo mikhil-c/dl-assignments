@@ -1,0 +1,5 @@
+  2.9-init-random epoch 1/5 val_acc=0.694
+  2.9-init-random epoch 2/5 val_acc=0.777
+  2.9-init-random epoch 3/5 val_acc=0.802
+  2.9-init-random epoch 4/5 val_acc=0.830
+  2.9-init-random epoch 5/5 val_acc=0.836

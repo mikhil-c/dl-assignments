@@ -1,0 +1,5 @@
+  2.6-cross_entropy epoch 1/5 val_acc=0.919
+  2.6-cross_entropy epoch 2/5 val_acc=0.919
+  2.6-cross_entropy epoch 3/5 val_acc=0.918
+  2.6-cross_entropy epoch 4/5 val_acc=0.948
+  2.6-cross_entropy epoch 5/5 val_acc=0.952

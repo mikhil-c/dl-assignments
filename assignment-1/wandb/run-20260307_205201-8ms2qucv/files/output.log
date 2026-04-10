@@ -1,0 +1,8 @@
+Most confused pairs:
+  True=4 predicted as 9: 9 times
+  True=6 predicted as 5: 9 times
+  True=2 predicted as 3: 8 times
+  True=3 predicted as 2: 8 times
+  True=9 predicted as 4: 8 times
+Accuracy: 97.86%
+F1: 0.9785

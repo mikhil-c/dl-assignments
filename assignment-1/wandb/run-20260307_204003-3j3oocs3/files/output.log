@@ -1,0 +1,5 @@
+  2.9-init-xavier epoch 1/5 val_acc=0.928
+  2.9-init-xavier epoch 2/5 val_acc=0.945
+  2.9-init-xavier epoch 3/5 val_acc=0.948
+  2.9-init-xavier epoch 4/5 val_acc=0.945
+  2.9-init-xavier epoch 5/5 val_acc=0.949

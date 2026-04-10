@@ -1,0 +1,12 @@
+{"time":"2026-03-07T20:50:41.486850766+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T20:50:41.990417421+05:30","level":"INFO","msg":"stream: created new stream","id":"iapy789i"}
+{"time":"2026-03-07T20:50:41.990629496+05:30","level":"INFO","msg":"handler: started","stream_id":"iapy789i"}
+{"time":"2026-03-07T20:50:41.990845199+05:30","level":"INFO","msg":"stream: started","id":"iapy789i"}
+{"time":"2026-03-07T20:50:41.990929565+05:30","level":"INFO","msg":"writer: started","stream_id":"iapy789i"}
+{"time":"2026-03-07T20:50:41.990993083+05:30","level":"INFO","msg":"sender: started","stream_id":"iapy789i"}
+{"time":"2026-03-07T20:52:11.145656256+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T20:52:11.533861888+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T20:52:11.54283959+05:30","level":"INFO","msg":"stream: closing","id":"iapy789i"}
+{"time":"2026-03-07T20:52:11.542873413+05:30","level":"INFO","msg":"handler: closed","stream_id":"iapy789i"}
+{"time":"2026-03-07T20:52:11.542996743+05:30","level":"INFO","msg":"sender: closed","stream_id":"iapy789i"}
+{"time":"2026-03-07T20:52:11.543019633+05:30","level":"INFO","msg":"stream: closed","id":"iapy789i"}

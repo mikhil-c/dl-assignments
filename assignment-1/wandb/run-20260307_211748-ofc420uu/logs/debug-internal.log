@@ -1,0 +1,12 @@
+{"time":"2026-03-07T21:17:48.913702843+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T21:17:49.39569289+05:30","level":"INFO","msg":"stream: created new stream","id":"ofc420uu"}
+{"time":"2026-03-07T21:17:49.396179859+05:30","level":"INFO","msg":"handler: started","stream_id":"ofc420uu"}
+{"time":"2026-03-07T21:17:49.396875309+05:30","level":"INFO","msg":"stream: started","id":"ofc420uu"}
+{"time":"2026-03-07T21:17:49.397279264+05:30","level":"INFO","msg":"sender: started","stream_id":"ofc420uu"}
+{"time":"2026-03-07T21:17:49.397344289+05:30","level":"INFO","msg":"writer: started","stream_id":"ofc420uu"}
+{"time":"2026-03-07T21:19:17.602006627+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T21:19:18.131815754+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T21:19:18.14158966+05:30","level":"INFO","msg":"stream: closing","id":"ofc420uu"}
+{"time":"2026-03-07T21:19:18.141689641+05:30","level":"INFO","msg":"handler: closed","stream_id":"ofc420uu"}
+{"time":"2026-03-07T21:19:18.141826184+05:30","level":"INFO","msg":"sender: closed","stream_id":"ofc420uu"}
+{"time":"2026-03-07T21:19:18.14184939+05:30","level":"INFO","msg":"stream: closed","id":"ofc420uu"}

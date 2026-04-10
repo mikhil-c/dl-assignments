@@ -1,0 +1,12 @@
+{"time":"2026-03-07T20:31:23.43393969+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T20:31:23.932903562+05:30","level":"INFO","msg":"stream: created new stream","id":"gttatcow"}
+{"time":"2026-03-07T20:31:23.933064409+05:30","level":"INFO","msg":"handler: started","stream_id":"gttatcow"}
+{"time":"2026-03-07T20:31:23.933422124+05:30","level":"INFO","msg":"stream: started","id":"gttatcow"}
+{"time":"2026-03-07T20:31:23.933448829+05:30","level":"INFO","msg":"writer: started","stream_id":"gttatcow"}
+{"time":"2026-03-07T20:31:23.933485072+05:30","level":"INFO","msg":"sender: started","stream_id":"gttatcow"}
+{"time":"2026-03-07T20:32:39.401273925+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T20:32:39.743476691+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T20:32:39.747978512+05:30","level":"INFO","msg":"stream: closing","id":"gttatcow"}
+{"time":"2026-03-07T20:32:39.748000666+05:30","level":"INFO","msg":"handler: closed","stream_id":"gttatcow"}
+{"time":"2026-03-07T20:32:39.748071045+05:30","level":"INFO","msg":"sender: closed","stream_id":"gttatcow"}
+{"time":"2026-03-07T20:32:39.748082711+05:30","level":"INFO","msg":"stream: closed","id":"gttatcow"}

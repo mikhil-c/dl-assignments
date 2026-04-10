@@ -1,0 +1,63 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            b3flk6u2vzp76zxhpp4jmhb6wd9f9teq:
+                codePath: assignment-1/notebooks/fast_experiments.py
+                codePathLocal: notebooks/fast_experiments.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "106301489152"
+                        used: "62028296192"
+                email: cs23b083@smail.iitm.ac.in
+                executable: /usr/bin/python
+                git:
+                    commit: 46eeeb70ffbdd86922a6f75af0376d856f34fc83
+                    remote: https://github.com/mikhil-c/dl-assignments.git
+                host: fedora
+                memory:
+                    total: "12175470592"
+                os: Linux-6.18.13-200.fc43.x86_64-x86_64-with-glibc2.42
+                program: /home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1/notebooks/fast_experiments.py
+                python: CPython 3.14.3
+                root: /home/mikhil/Mikhil/Courses/DA courses/Sem-6/DA6401/dl-assignments/assignment-1
+                startedAt: "2026-03-07T15:05:10.749896Z"
+                writerId: b3flk6u2vzp76zxhpp4jmhb6wd9f9teq
+        m: []
+        python_version: 3.14.3
+        t:
+            "1":
+                - 1
+                - 2
+                - 5
+                - 53
+            "2":
+                - 1
+                - 2
+                - 5
+                - 53
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.14.3
+            "5": 0.25.0
+            "12": 0.25.0
+            "13": linux-x86_64
+activation:
+    value: relu
+epochs:
+    value: 5
+hidden_size:
+    value:
+        - 128
+        - 128
+        - 128
+learning_rate:
+    value: 0.1
+num_layers:
+    value: 3
+optimizer:
+    value: rmsprop

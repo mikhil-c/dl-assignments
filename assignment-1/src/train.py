@@ -32,41 +32,41 @@ def parse_arguments():
     parser.add_argument(
         "-d", "--dataset",
         type=str,
-        required=True,
+        default="mnist",
         choices=["mnist", "fashion_mnist"],
         help="Choose between mnist and fashion_mnist"
     )
-    parser.add_argument("-e", "--epochs", type=int, required=True, help="Number of training epochs")
-    parser.add_argument("-b", "--batch_size", type=int, required=True, help="Mini-batch size")
+    parser.add_argument("-e", "--epochs", type=int, default=50, help="Number of training epochs")
+    parser.add_argument("-b", "--batch_size", type=int, default=32, help="Mini-batch size")
     parser.add_argument(
         "-l", "--loss",
         type=str,
-        required=True,
+        default="cross_entropy",
         choices=["mean_squared_error", "cross_entropy"],
         help="Choice of mean_squared_error or cross_entropy"
     )
     parser.add_argument(
         "-o", "--optimizer",
         type=str,
-        required=True,
+        default="rmsprop",
         choices=["sgd", "momentum", "nag", "rmsprop"],
         help="One of sgd, momentum, nag, rmsprop"
     )
-    parser.add_argument("-lr", "--learning_rate", type=float, required=True, help="Initial learning rate")
+    parser.add_argument("-lr", "--learning_rate", type=float, default=0.001, help="Initial learning rate")
     parser.add_argument("-wd", "--weight_decay", type=float, default=0.0, help="Weight dacay for L2 regularization")
-    parser.add_argument("-nhl", "--num_layers", type=int, required=True, help="Number of hidden layers")
-    parser.add_argument("-sz", "--hidden_size", type=int, required=True, nargs="+", help="Number of neurons in each hidden layer")
+    parser.add_argument("-nhl", "--num_layers", type=int, default=3, help="Number of hidden layers")
+    parser.add_argument("-sz", "--hidden_size", type=int, default=[128, 64, 32], nargs="+", help="Number of neurons in each hidden layer")
     parser.add_argument(
         "-a", "--activation",
         type=str,
-        required=True,
+        default="relu",
         choices=["sigmoid", "tanh", "relu"],
         help="Choice of sigmoid, tanh, relu for every hidden layer"
     )
     parser.add_argument(
         "-w_i", "--weight_init",
         type=str,
-        required=True,
+        default="xavier",
         choices=["random", "xavier"],
         help="Choice of random or xavier"
     )
